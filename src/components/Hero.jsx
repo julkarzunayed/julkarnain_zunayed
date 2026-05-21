@@ -11,11 +11,11 @@ import profileBlue from "../assets/profile/profile_by_canva_blue-shadow.png"
 
 
 const words = [
-    "Web Developer",
-    "IT Support Specialist",
-    "MERN Stack Development",
-    "Creative Problem Solver",
+    "Diploma Engineer",
     "Electrical Engineer",
+    "Programmer",
+    "Creative Problem Solver",
+    "Electronic Enthusiast",
 ];
 
 const socialLinks = [
@@ -94,11 +94,13 @@ const Hero = () => {
                         </button>
                         {/* Download Resume 
                                 https://drive.google.com/uc?export=download&id=[FILE_ID]
-                                https://drive.google.com/file/d/1WOnEAjhtnkZFfLJxDvxKxFzTyi_CXWw6/view?usp=drive_link                        
+                                https://drive.google.com/file/d/1WOnEAjhtnkZFfLJxDvxKxFzTyi_CXWw6/view?usp=drive_link  
+                                
+                                https://drive.google.com/file/d/1YR-lQg9H82KlKR7zFGDXhV7Z-ffQxodO/view?usp=drive_link
                         */}
                         {/* Resume Download Button */}
                         <a
-                            href="https://drive.google.com/uc?export=download&id=1wlngjuIWqT6h6by7uZ764z4u2_JjILWS" 
+                            href="https://drive.google.com/uc?export=download&id=1YR-lQg9H82KlKR7zFGDXhV7Z-ffQxodO" 
                             //https://drive.google.com/uc?export=download&id=[FILE_ID]
                             // 1wlngjuIWqT6h6by7uZ764z4u2_JjILWS
                             // 1WOnEAjhtnkZFfLJxDvxKxFzTyi_CXWw6
