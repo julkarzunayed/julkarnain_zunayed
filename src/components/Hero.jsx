@@ -43,7 +43,7 @@ const socialLinks = [
 
 const Hero = () => {
     return (
-        <section className=' min-h-screen flex items-center justify-center px-4 '>
+        <section id='hero' className=' min-h-screen flex items-center justify-center px-4 '>
 
             <div className="container mx-auto flex gap-10 flex-col-reverse lg:flex-row py-20 *: *:flex-1/2">
                 <div className="flex flex-col items-center lg:items-start">
@@ -89,9 +89,9 @@ const Hero = () => {
                     </div>
                     {/* Action button ------Resume----button */}
                     <div className="flex gap-6">
-                        <button className="btn-glowing flex gap-2 items-center active:scale-y-105 after:bg-[#333333]">
+                        {/* <button className="btn-glowing flex gap-2 items-center active:scale-y-105 after:bg-[#333333]">
                             More Ifo <GoLinkExternal />
-                        </button>
+                        </button> */}
                         {/* Download Resume 
                                 https://drive.google.com/uc?export=download&id=[FILE_ID]
                                 https://drive.google.com/file/d/1WOnEAjhtnkZFfLJxDvxKxFzTyi_CXWw6/view?usp=drive_link  

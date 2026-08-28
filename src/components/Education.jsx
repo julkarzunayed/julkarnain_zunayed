@@ -35,7 +35,7 @@ const educationData = [
 
 const Education = () => {
     return (
-        <div className='min-h-screen flex items-center justify-center'>
+        <div id='education' className='min-h-screen flex items-center justify-center'>
             {/* <Icon className='' icon="skill-icons:vite-dark" width="256" height="256" />
             <Icon icon="skill-icons:react-dark" width="256" height="256" /> */}
             {/* <Icon icon="skill-icons:tailwindcss-dark" width="256" height="256" /> */}

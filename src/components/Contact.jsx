@@ -35,7 +35,7 @@ const contactData = [
     {
         icon: 'humbleicons:mail',
         title: 'Email',
-        contact: 'zunayedjulkar@gmail.com',
+        contact: 'julkarnainzunayed@gmail.com',
         color: ''
     },
     {
@@ -73,13 +73,17 @@ const Contact = () => {
             title: "Your Message has been sent!",
             background: '#303030',
             color: '#ffffff'
-            
+
         });
+        form.name.value = '';
+        form.email.value = '';
+        form.subject.value = '';
+        form.message.value = '';
 
     };
 
     return (
-        <div className='min-h-screen flex items-center justify-center py-16'>
+        <div id='contact' className='min-h-screen flex items-center justify-center py-16'>
             <div className="container flex flex-col gap-10 lg:flex-row *: *:flex-1">
                 {/* Contact Content---------------- */}
                 <div className="">
@@ -128,9 +132,13 @@ const Contact = () => {
                 {/* Send message Form */}
                 <div className="p-8 bg-white/5 rounded-xl max-w-2xl mx-auto w-full">
                     <form onSubmit={handleFormSubmit} className="flex flex-col gap-5 *:w-full *:px-4 *:py-3 *:rounded-lg *:bg-white/5 *:border *:border-gray-700 *:focus:border-blue-500 *:focus:outline-none *:transition-colors">
+                        {/* Name */}
                         <input required type="text" name='name' placeholder="Your Name" className="" />
-                        <input required type="text" name='email' placeholder="Your Email" className="" />
+                        {/* Email */}
+                        <input required type="email" name='email' placeholder="Your Email" className="" />
+                        {/* Subject */}
                         <input required type="text" name='subject' placeholder="Subject" className="" />
+                        {/* Message */}
                         <textarea required className="" name='message' placeholder="Your Message"></textarea>
                         <button role='submit' className="bg-gradient-to-r from-blue-500 to-purple-500 font-bold text-lg flex items-center gap-3 justify-center">
                             Send Message <Icon icon="tabler:send" />

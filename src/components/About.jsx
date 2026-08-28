@@ -14,10 +14,9 @@ const About = () => {
                 <div className="max-w-2xl">
                     <h2 className="text-[#4ECCA3] text-2xl font-bold mb-6">WHO I AM?</h2>
                     <p className="text-lg leading-relaxed">
-                        I&apos;m MD Julkarnain Zunayed, a Diploma-In Electrical Engineering Student at Barishal Polytechnic Institute, Barishal, specializing in MERN stack development. With
-                        an entrepreneurial mindset.
+                        I&apos;m Julkarnain Zunayed, a Disciplined Electrical Engineering student with expertise in circuit simulation, embedded systems, and industrial electrical layouts. A fast learner and active listener  skilled at bridging the gap between hardware design and digital control systems to optimize operational efficiency.
                         <br />
-                        I&apos;m skilled in electrical work, electronics, plumbing, IT
+                        I&apos;m skilled in electrical work, electronics, IT
                         support, problem-solving, and creative thinking. 
                     </p>
                 </div>

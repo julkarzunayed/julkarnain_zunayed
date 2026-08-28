@@ -1,6 +1,6 @@
 
 
-import { Route, Router } from 'react-router-dom'
+// import { Route, Router } from 'react-router-dom'
 import './App.css'
 import About from './components/About'
 import Contact from './components/Contact'
@@ -9,7 +9,7 @@ import Hero from './components/Hero'
 import NavBar from './components/NavBar'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
-import { Element } from 'react-scroll'
+// import { Element } from 'react-scroll'
 
 function App() {
 
@@ -23,7 +23,7 @@ function App() {
         <Route path='/skills' element={<Skills />} />
       </Router> */}
 
-      <Element id='hero' name="hero">
+      {/* <Element id='hero' name="hero">
         <Hero />
         <About />
       </Element>
@@ -31,14 +31,14 @@ function App() {
       <Element id='skills' name="skills"><Skills /></Element>
       <Element id='education' name="education"><Education /></Element>
       <Element id='projects' name="projects"><Projects /></Element>
-      <Element id='contact' name="contact"><Contact /></Element>
+      <Element id='contact' name="contact"><Contact /></Element> */}
 
-      {/* <Hero />
+      <Hero />
       <About />
       <Skills />
       <Education />
       <Projects />
-      <Contact /> */}
+      <Contact />
     </div>
   )
 }

@@ -8,10 +8,10 @@ const ProjectCard = ({ project }) => {
     //     console.log('mouse-in')
     // }
     return (
-        <div
+        <div 
             // onMouseEnter={() => setHovered(true)}
             // onMouseLeave={() => setHovered(false)}
-            className="border border-slate-800 rounded-2xl max-w-[360px] group mx-auto">
+            className="border  border-slate-800 rounded-2xl max-w-[360px] group mx-auto">
             <div className="group-hover:scale-110 transition-all group-hover:bg-slate-800/70 rounded-2xl duration-500 p-4 sm:p-4 md:p-5 lg:p-6 flex flex-col h-full ">
                 {/* Image Section */}
                 <figure
@@ -159,7 +159,7 @@ const projectData = [
 
 const Projects = () => {
     return (
-        <section className='min-h-screen flex items-center justify-center border border-blue-700/10 '>
+        <section id='projects' className='min-h-screen flex items-center justify-center border border-blue-700/10 '>
             <div className="container mx-auto my-10">
                 <h1 className="gradient-text text-4xl md:text-5xl lg:text-6xl text-center font-black  p-5">
                     Projects Developed by Me
