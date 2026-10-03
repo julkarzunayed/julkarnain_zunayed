@@ -4,48 +4,64 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      role: "Industrial Engineering Intern",
-      company: "Meghna Group of Industries (MGI)",
+      role: "Automation and PLC Intern",
+      company: "Neon Industrial Training & Automation System (NITAS)",
       unit: "Everest Power Generation Co. Ltd.",
       period: "September 26 – Present",
       type: "Student Internship",
-      description: "Hands-on industrial training across heavy power plant operations, protection setups, switchgears, and power generation units.",
+      description: "Hands-on industrial training across heavy power plant operations, protection setups, switchgear, and power generation units.",
       highlights: [
         "Studied engine working principles, cooling, lubricating, fuel/air, and protection systems.",
         "Gained practical insights into Alternator principles, load distribution, and EGB boilers.",
         "Analyzed LV/MV switchgear systems, Auxiliary Transformers, and Substation Equipment.",
         "Explored Transformer Protection Systems, Plant DC Systems, and Motor Controlling Systems."
       ],
-      tags: ["Power Generation", "LV/MV Switchgear", "Substation", "Motor Control", "Transformer Protection"]
+      tags: ["Power Generation", "EGB Boiler", "Alternator Operation", "LV/MV Switchgear", "Substation Equipments", "Motor Control", "Transformer Protection", "Engine Operation System", "Industrial Automation & Control"]
     },
     {
       id: 2,
-      role: "Upcoming Plant Rotations",
+      role: "Industrial Engineering Intern",
       company: "Meghna Group of Industries (MGI)",
-      unit: "Sugar Refinery, Unique Cement & Pulp Mills",
-      period: "Upcoming Rotation",
-      type: "Cross-Industry Learning",
-      description: "Observing real-world applications of electrical systems, heavy automation, PLC/SCADA integration, and high-voltage power distribution.",
+      unit: "Everest Power Generation Co. Ltd.",
+      period: "September 26 – Present",
+      type: "Student Internship",
+      description: "Hands-on industrial training across heavy power plant operations, protection setups, switchgear, and power generation units.",
       highlights: [
-        "Exploring heavy conveyor motor drives, sensor networks, and process automation.",
-        "Studying industrial electrical safety and power distribution across large manufacturing facilities."
+        "Studied engine working principles, cooling, lubricating, fuel/air, and protection systems.",
+        "Gained practical insights into Alternator principles, load distribution, and EGB boilers.",
+        "Analyzed LV/MV switchgear systems, Auxiliary Transformers, and Substation Equipment.",
+        "Explored Transformer Protection Systems, Plant DC Systems, and Motor Controlling Systems."
       ],
-      tags: ["Factory Automation", "Industrial Wiring", "PLC Concepts", "Heavy Machinery"]
+      tags: ["Power Generation", "EGB Boiler", "Alternator Operation", "LV/MV Switchgear", "Substation Equipments", "Motor Control", "Transformer Protection", "Engine Operation System", "Industrial Automation & Control"]
     },
-    {
-      id: 3,
-      role: "Diploma in Electrical Engineering",
-      company: "Barishal Polytechnic Institute",
-      unit: "Academic Journey",
-      period: "2023 – Present",
-      type: "8th Semester Intern",
-      description: "Acquiring strong fundamentals in circuit design, electrical machines, embedded hardware, and software integration.",
-      highlights: [
-        "Earned Level-3 Certificate in Electrical Installation & Maintenance.",
-        "Competed in National Skills and Innovation Competition (2025)."
-      ],
-      tags: ["Circuit Design", "Embedded Systems", "Electrical Machines", "GTD Systems"]
-    }
+    // {
+    //   id: 2,
+    //   role: "Upcoming Plant Rotations",
+    //   company: "Meghna Group of Industries (MGI)",
+    //   unit: "Sugar Refinery, Unique Cement & Pulp Mills",
+    //   period: "Upcoming Rotation",
+    //   type: "Cross-Industry Learning",
+    //   description: "Observing real-world applications of electrical systems, heavy automation, PLC/SCADA integration, and high-voltage power distribution.",
+    //   highlights: [
+    //     "Exploring heavy conveyor motor drives, sensor networks, and process automation.",
+    //     "Studying industrial electrical safety and power distribution across large manufacturing facilities."
+    //   ],
+    //   tags: ["Factory Automation", "Industrial Wiring", "PLC Concepts", "Heavy Machinery"]
+    // },
+    // {
+    //   id: 3,
+    //   role: "Diploma in Electrical Engineering",
+    //   company: "Barishal Polytechnic Institute",
+    //   unit: "Academic Journey",
+    //   period: "2023 – Present",
+    //   type: "8th Semester Intern",
+    //   description: "Acquiring strong fundamentals in circuit design, electrical machines, embedded hardware, and software integration.",
+    //   highlights: [
+    //     "Earned Level-3 Certificate in Electrical Installation & Maintenance.",
+    //     "Competed in National Skills and Innovation Competition (2025)."
+    //   ],
+    //   tags: ["Circuit Design", "Embedded Systems", "Electrical Machines", "GTD Systems"]
+    // }
   ];
 
   return (
@@ -70,7 +86,7 @@ const Experience = () => {
 
           {/* Experience Nodes */}
           <div className="space-y-12 ">
-            {experiences.map((exp, index) => {
+            {experiences.slice().reverse().map((exp, index) => {
               const isEven = index % 2 === 0;
               return (
                 <div 
@@ -93,7 +109,7 @@ const Experience = () => {
                   */}
                   {/* w-full lg:w-1/2 px-4 md:px-8 */}
                   <div className={`w-full lg:w-1/2 pr-12 md:pr-16  ${isEven ? 'lg:pl-0 lg:pr-8' : 'lg:pl-8 lg:pr-0'}`}>
-                    <div className="bg-slate-900/80 backdrop-blur-md border border-cyan-500/20 hover:border-cyan-400/60 transition-all duration-300 rounded-2xl p-6 shadow-xl hover:shadow-[0_0_25px_rgba(6,182,212,0.15)] group">
+                    <div className="bg-slate-900/80 backdrop-blur-md border-4 border-cyan-500/20  hover:border-cyan-400/60 hover:scale-105 transition-all duration-300 rounded-2xl p-6 shadow-xl hover:shadow-[0_0_25px_rgba(6,182,212,0.15)] group">
                       
                       {/* Badge & Period */}
                       <div className="flex items-center justify-between gap-2 mb-2 flex-wrap">
@@ -106,10 +122,10 @@ const Experience = () => {
                       </div>
 
                       {/* Title & Organization */}
-                      <h3 className="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">
+                      <h3 className="text-xl group-hover:text-2xl font-bold text-white group-hover:text-cyan-300 transition-colors">
                         {exp.role}
                       </h3>
-                      <p className="text-sm text-cyan-400 font-medium mb-1">
+                      <p className="text-sm text-cyan-400 group-hover:text-gray-200 font-medium mb-1">
                         {exp.company}
                       </p>
                       <p className="text-xs text-gray-400 italic mb-4">
@@ -122,7 +138,7 @@ const Experience = () => {
                       </p>
 
                       {/* Key Highlights */}
-                      <ul className="text-xs text-gray-400 space-y-1.5 mb-5 list-disc pl-4">
+                      <ul className="text-sm text-gray-400 space-y-1.5 mb-5 list-disc pl-4">
                         {exp.highlights.map((point, i) => (
                           <li key={i}>{point}</li>
                         ))}

@@ -3,7 +3,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <section className="min-h-screen border border-blue-800/20  text-white py-16 flex items-center justify-center">
+        <section className="min-h-screen   text-white py-16 flex items-center justify-center">
             <div className='container mx-auto px-4 flex gap-10 flex-col lg:flex-row items-center justify-center'>
                 <figure className=''>
                     <img className='rounded-full border-4 border-blue-900 max-w-3xs lg:max-w-xs  logo-drop-shadow'
