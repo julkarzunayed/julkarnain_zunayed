@@ -7,8 +7,8 @@ const Experience = () => {
       role: "Industrial Engineering Intern",
       company: "Meghna Group of Industries (MGI)",
       unit: "Everest Power Generation Co. Ltd.",
-      period: "2026 – Present",
-      type: "Industrial Rotation",
+      period: "September 26 – Present",
+      type: "Student Internship",
       description: "Hands-on industrial training across heavy power plant operations, protection setups, switchgears, and power generation units.",
       highlights: [
         "Studied engine working principles, cooling, lubricating, fuel/air, and protection systems.",
@@ -50,7 +50,7 @@ const Experience = () => {
 
   return (
     <div id="experience" className="min-h-screen flex items-center justify-center ">
-      <div className="container mx-auto my-10 border border-blue-700">
+      <div className="container mx-auto my-10  border-blue-700">
         {/* Section Heading */}
         <h1 className="gradient-text text-5xl md:text-6xl lg:text-7xl text-center font-black p-5">
           Experience
@@ -60,29 +60,30 @@ const Experience = () => {
         </h6>
 
         {/* Tree / Timeline Stem Container */}
-        <div className="relative max-w-5xl mx-auto">
+        <div className="relative  mx-auto ">
           {/* Vertical Glowing Trunk Line: 
               - On small/medium screens (< lg): Positioned on the RIGHT side (`right-4 md:right-8 translate-x-1/2`)
               - On large screens (>= lg): Centered (`lg:left-1/2 lg:-translate-x-1/2`)
           */}
+          
           <div className="absolute right-4 md:right-8 lg:left-1/2 top-0 bottom-0 w-1 translate-x-1/2 lg:-translate-x-1/2 bg-gradient-to-b from-cyan-500 via-blue-600 to-indigo-600 rounded-full shadow-[0_0_15px_rgba(6,182,212,0.5)]" />
 
           {/* Experience Nodes */}
-          <div className="space-y-12">
+          <div className="space-y-12 ">
             {experiences.map((exp, index) => {
               const isEven = index % 2 === 0;
               return (
                 <div 
                   key={exp.id} 
-                  className={`relative flex flex-col lg:flex-row items-center ${
-                    isEven ? 'lg:flex-row-reverse' : ''
+                  className={` relative flex flex-col lg:flex-row items-center ${
+                    !isEven ? 'lg:flex-row-reverse' : ''
                   }`}
                 >
                   {/* Glowing Tree Connector Dot:
                       - Right-aligned on small/medium screens
                       - Centered on large screens
                   */}
-                  <div className="absolute right-4 md:right-8 lg:left-1/2 translate-x-1/2 lg:-translate-x-1/2 w-6 h-6 rounded-full bg-slate-900 border-2 border-cyan-400 z-10 flex items-center justify-center shadow-[0_0_12px_#06b6d4]">
+                  <div className="absolute right-4 md:right-8 lg:left-1/2 top-1/2 -translate-y-1/2 lg:-translate-x-1/2 translate-x-1/2 w-6 h-6 rounded-full bg-slate-900 border-2 border-cyan-400 z-10 flex items-center justify-center shadow-[0_0_12px_#06b6d4]">
                     <div className="w-2 h-2 rounded-full bg-cyan-300 animate-ping" />
                   </div>
 
@@ -90,7 +91,8 @@ const Experience = () => {
                       - Small/Medium (< lg): Occupies left area with padding on the right (`pr-12 md:pr-16 w-full`)
                       - Large (>= lg): Occupies 50% width and alternates side (`lg:w-1/2 lg:px-8 lg:pr-0`)
                   */}
-                  <div className="w-full lg:w-1/2 pr-12 md:pr-16 lg:pr-0 lg:px-8">
+                  {/* w-full lg:w-1/2 px-4 md:px-8 */}
+                  <div className={`w-full lg:w-1/2 pr-12 md:pr-16  ${isEven ? 'lg:pl-0 lg:pr-8' : 'lg:pl-8 lg:pr-0'}`}>
                     <div className="bg-slate-900/80 backdrop-blur-md border border-cyan-500/20 hover:border-cyan-400/60 transition-all duration-300 rounded-2xl p-6 shadow-xl hover:shadow-[0_0_25px_rgba(6,182,212,0.15)] group">
                       
                       {/* Badge & Period */}
@@ -130,7 +132,7 @@ const Experience = () => {
                       <div className="flex flex-wrap gap-1.5 pt-2 border-t border-slate-800">
                         {exp.tags.map((tag, i) => (
                           <span key={i} className="text-[11px] px-2 py-0.5 rounded bg-slate-800 text-cyan-200 border border-slate-700">
-                            #{tag}
+                            {tag}
                           </span>
                         ))}
                       </div>
