@@ -112,7 +112,7 @@ const Skills = () => {
         },
     ]
     return (
-        <div id='skills' className='min-h-screen flex items-center justify-center border border-blue-700/10 '>
+        <div id='skills' className='min-h-screen flex items-center justify-center'>
             <div className="container mx-auto my-10">
                 <h1 className="gradient-text text-5xl md:text-6xl lg:text-7xl text-center font-black  p-5">
                     My Skills
