@@ -11,11 +11,13 @@ import {
     FaEnvelope, // Icon for Connect
 } from "react-icons/fa";
 import { Link, NavLink } from 'react-router';
+import { GiLightBulb } from 'react-icons/gi';
+import { HiOutlineLightBulb } from 'react-icons/hi';
+import { RiLightbulbFlashFill, RiLightbulbFlashLine } from 'react-icons/ri';
 // import useActiveSection from '../hooks/useActiveSection';
 
 const navLinks = [
     { id: "hero", icon: FaHome, text: "Home", path: "/" },
-    { id: "skills", icon: FaCode, text: "Skills", path: "/skills" },
     {
         id: "experience",
         icon: FaBriefcase,
@@ -28,6 +30,16 @@ const navLinks = [
         icon: FaGraduationCap,
         text: "Education",
         path: "/education",
+    },
+    {
+        id: "skills",
+        // icon: FaCode,
+        // icon: GiLightBulb,
+        // icon: HiOutlineLightBulb,
+        // icon: RiLightbulbFlashFill,
+        icon: RiLightbulbFlashLine,
+        text: "Skills",
+        path: "/skills"
     },
     { id: "projects", icon: FaLaptopCode, text: "Projects", path: "/projects" },
     { id: "contact", icon: FaEnvelope, text: "Contact", path: "/contact" }, // Added Connect
@@ -46,7 +58,7 @@ const NavBar = () => {
                             {navLinks.map(({ id, icon: Icon, text, }) => (
 
                                 <button
-                                
+
                                     key={id}
                                     // to={id}
                                     // smooth={true}

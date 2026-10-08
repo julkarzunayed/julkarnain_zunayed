@@ -7,12 +7,15 @@ import WhatsApp from "../assets/social-icons/whatsapp.png";
 import "../styles/glowingButton.css"
 import { IoCloudDownloadOutline } from 'react-icons/io5';
 import { GoLinkExternal } from 'react-icons/go';
-import profileBlue from "../assets/profile/profile_by_canva_blue-shadow.png"
+// import profileBlue from "../assets/profile/profile_by_canva_blue-shadow.png"
+import profileBlue from "../assets/profile/compressed_4.webp"
 
 
 const words = [
     "Diploma Engineer",
     "Electrical Engineer",
+    "Automation Engineer",
+    "PLC | SCADA | HMI | VFD",
     "Programmer",
     "Creative Problem Solver",
     "Electronic Enthusiast",
