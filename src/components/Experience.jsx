@@ -4,19 +4,28 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      role: "Automation and PLC Intern",
+      role: "Automation & PLC Trainee",
       company: "Neon Industrial Training & Automation System (NITAS)",
-      unit: "Everest Power Generation Co. Ltd.",
-      period: "September 26 – Present",
-      type: "Student Internship",
-      description: "Hands-on industrial training across heavy power plant operations, protection setups, switchgear, and power generation units.",
+      unit: "Siemens S7-1200 & HMI Basic Training",
+      period: "Ongoing",
+      type: "Professional Training",
+      description: "Hands-on technical training on Siemens S7-1200 PLC programming, TIA Portal software, logic gate design, industrial motor controls, and HMI design.",
       highlights: [
-        "Studied engine working principles, cooling, lubricating, fuel/air, and protection systems.",
-        "Gained practical insights into Alternator principles, load distribution, and EGB boilers.",
-        "Analyzed LV/MV switchgear systems, Auxiliary Transformers, and Substation Equipment.",
-        "Explored Transformer Protection Systems, Plant DC Systems, and Motor Controlling Systems."
+        "Configured hardware architecture, IP communication, and IO addressing between PC & Siemens S7-1200 PLC.",
+        "Programmed ladder diagrams (LAD/FBD) utilizing NO/NC contacts, Set-Reset, Timers, Counters, and Comparators.",
+        "Designed industrial automation programs for Star-Delta and Reverse-Forward motor control setups.",
+        "Gained hands-on experience in simulation, IO forcing, Analog Processing (AI/AO), and Siemens HMI tag creation/animations."
       ],
-      tags: ["Power Generation", "EGB Boiler", "Alternator Operation", "LV/MV Switchgear", "Substation Equipments", "Motor Control", "Transformer Protection", "Engine Operation System", "Industrial Automation & Control"]
+      tags: [
+        "Siemens S7-1200",
+        "TIA Portal",
+        "Ladder Logic (LAD)",
+        "HMI Design",
+        "Analog Processing",
+        "Star-Delta Control",
+        "Reverse-Forward Control",
+        "Industrial Automation"
+      ]
     },
     {
       id: 2,
@@ -81,7 +90,7 @@ const Experience = () => {
               - On small/medium screens (< lg): Positioned on the RIGHT side (`right-4 md:right-8 translate-x-1/2`)
               - On large screens (>= lg): Centered (`lg:left-1/2 lg:-translate-x-1/2`)
           */}
-          
+
           <div className="absolute right-4 md:right-8 lg:left-1/2 top-0 bottom-0 w-1 translate-x-1/2 lg:-translate-x-1/2 bg-gradient-to-b from-cyan-500 via-blue-600 to-indigo-600 rounded-full shadow-[0_0_15px_rgba(6,182,212,0.5)]" />
 
           {/* Experience Nodes */}
@@ -89,11 +98,10 @@ const Experience = () => {
             {experiences.slice().reverse().map((exp, index) => {
               const isEven = index % 2 === 0;
               return (
-                <div 
-                  key={exp.id} 
-                  className={` relative flex flex-col lg:flex-row items-center ${
-                    !isEven ? 'lg:flex-row-reverse' : ''
-                  }`}
+                <div
+                  key={exp.id}
+                  className={` relative flex flex-col lg:flex-row items-center ${!isEven ? 'lg:flex-row-reverse' : ''
+                    }`}
                 >
                   {/* Glowing Tree Connector Dot:
                       - Right-aligned on small/medium screens
@@ -110,7 +118,7 @@ const Experience = () => {
                   {/* w-full lg:w-1/2 px-4 md:px-8 */}
                   <div className={`w-full lg:w-1/2 pr-12 md:pr-16  ${isEven ? 'lg:pl-0 lg:pr-8' : 'lg:pl-8 lg:pr-0'}`}>
                     <div className="bg-slate-900/80 backdrop-blur-md border-4 border-cyan-500/20  hover:border-cyan-400/60 hover:scale-105 transition-all duration-300 rounded-2xl p-6 shadow-xl hover:shadow-[0_0_25px_rgba(6,182,212,0.15)] group">
-                      
+
                       {/* Badge & Period */}
                       <div className="flex items-center justify-between gap-2 mb-2 flex-wrap">
                         <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-cyan-950/80 text-cyan-400 border border-cyan-500/30">

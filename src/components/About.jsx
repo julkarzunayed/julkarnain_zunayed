@@ -14,10 +14,7 @@ const About = () => {
                 <div className="max-w-2xl">
                     <h2 className="text-[#4ECCA3] text-2xl font-bold mb-6">WHO I AM?</h2>
                     <p className="text-lg leading-relaxed">
-                        I&apos;m Julkarnain Zunayed, a Disciplined Electrical Engineering student with expertise in circuit simulation, embedded systems, and industrial electrical layouts. A fast learner and active listener  skilled at bridging the gap between hardware design and digital control systems to optimize operational efficiency.
-                        <br />
-                        I&apos;m skilled in electrical work, electronics, IT
-                        support, problem-solving, and creative thinking. 
+                        I&apos;m Julkarnain Zunayed, an enthusiastic Electrical Engineering diploma student with practical experience in heavy power plant operations, PLC automation, and industrial electrical systems. Skilled in motor control circuits, switchgears, substation equipment, and preventive maintenance, alongside hands-on software capabilities in MERN stack development. A fast learner and problem solver committed to optimizing operational efficiency and supporting technical plant management. 
                     </p>
                 </div>
             </div>
