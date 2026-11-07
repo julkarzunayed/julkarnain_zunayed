@@ -416,7 +416,7 @@ const Skills = () => {
                     My Skills
                 </h1>
                 <h6 className="mb-10 font-semibold text-gray-400 text-lg italic text-center">
-                    &quot; Learning new Technologies and skills &quot;
+                    &quot;Core engineering proficiencies tailored for modern industrial environments.&quot;
                 </h6>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
 

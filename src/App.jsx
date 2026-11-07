@@ -10,6 +10,7 @@ import Hero from './components/Hero'
 import NavBar from './components/NavBar'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
+import Certifications from './components/Certifications'
 // import { Element } from 'react-scroll'
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
       <About />
       <Experience />
       <Education />
+      <Certifications />
       <Skills />
       <Projects />
       <Contact />

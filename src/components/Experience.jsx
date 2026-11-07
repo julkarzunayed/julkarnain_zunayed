@@ -81,7 +81,7 @@ const Experience = () => {
           Experience
         </h1>
         <h6 className="mb-16 font-semibold text-gray-400 text-lg italic text-center">
-          &quot; Overcoming challenges and gaining valuable insights &quot;
+          &quot;Gaining real-world industry exposure across heavy manufacturing and power units&quot;
         </h6>
 
         {/* Tree / Timeline Stem Container */}

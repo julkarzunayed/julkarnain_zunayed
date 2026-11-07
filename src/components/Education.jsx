@@ -47,7 +47,7 @@ const Education = () => {
                     Academic Education
                 </h1>
                 <h6 className="mb-10 font-semibold text-gray-400 text-lg italic text-center">
-                    &quot; Learning new Technologies and skills &quot;
+                    &quot;Building a strong academic foundation in electrical and technical engineering&quot;
                 </h6>
                 <div className="grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto gap-5">
                     {
