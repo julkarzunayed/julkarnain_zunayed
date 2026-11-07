@@ -5,7 +5,7 @@ import LinkedIn from "../assets/social-icons/linkedin.png";
 import Facebook from "../assets/social-icons/facebook.png";
 import WhatsApp from "../assets/social-icons/whatsapp.png";
 import "../styles/glowingButton.css"
-import { IoCloudDownloadOutline } from 'react-icons/io5';
+import { IoCloudDownloadOutline, IoEyeOutline } from 'react-icons/io5';
 import { GoLinkExternal } from 'react-icons/go';
 // import profileBlue from "../assets/profile/profile_by_canva_blue-shadow.png"
 import profileBlue from "../assets/profile/compressed_4.webp"
@@ -90,25 +90,39 @@ const Hero = () => {
                             )
                         }
                     </div>
-                    {/* Action button ------Resume----button */}
+                    {/* Action buttons ------Resume----button */}
                     <div className="flex gap-6">
-                        {/* <button className="btn-glowing flex gap-2 items-center active:scale-y-105 after:bg-[#333333]">
-                            More Ifo <GoLinkExternal />
-                        </button> */}
+                        {/* Resume Preview Button */}
+                        <a
+                            href="https://drive.google.com/file/d/1YR-lQg9H82KlKR7zFGDXhV7Z-ffQxodO/view"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {/* <button className="btn-secondary flex gap-2 items-center">
+                                Preview Resume <IoEyeOutline />
+                            </button> */}
+                            <button className="btn-glowing flex gap-2 items-center active:scale-y-105 after:bg-[#333333]">
+                                View Resume<GoLinkExternal />
+                            </button>
+                        </a >
+
                         {/* Download Resume 
                                 https://drive.google.com/uc?export=download&id=[FILE_ID]
                                 https://drive.google.com/file/d/1WOnEAjhtnkZFfLJxDvxKxFzTyi_CXWw6/view?usp=drive_link  
                                 
                                 https://drive.google.com/file/d/1YR-lQg9H82KlKR7zFGDXhV7Z-ffQxodO/view?usp=drive_link
+
+
+                                https://drive.google.com/file/d/1r9sfUQfCUeng7nOghpjDqIVn8NVjblrV/view?usp=drive_link
                         */}
                         {/* Resume Download Button */}
                         <a
-                            href="https://drive.google.com/uc?export=download&id=1YR-lQg9H82KlKR7zFGDXhV7Z-ffQxodO" 
+                            href="https://drive.google.com/uc?export=download&id=1YR-lQg9H82KlKR7zFGDXhV7Z-ffQxodO"
                             //https://drive.google.com/uc?export=download&id=[FILE_ID]
                             // 1wlngjuIWqT6h6by7uZ764z4u2_JjILWS
                             // 1WOnEAjhtnkZFfLJxDvxKxFzTyi_CXWw6
                             download={"Resume of Julkarnain Zunayed"}
-                            >
+                        >
                             <button className="btn-glowing flex gap-2 items-center after:bg-[#ffffff50]">
                                 Get Resume <IoCloudDownloadOutline />
                             </button>
