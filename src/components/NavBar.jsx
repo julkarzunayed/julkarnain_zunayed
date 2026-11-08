@@ -14,7 +14,9 @@ import { Link, NavLink } from 'react-router';
 import { GiLightBulb } from 'react-icons/gi';
 import { HiOutlineLightBulb } from 'react-icons/hi';
 import { RiLightbulbFlashFill, RiLightbulbFlashLine } from 'react-icons/ri';
+// import { RiCertificate2Fill } from "react-icons/ri";
 // import useActiveSection from '../hooks/useActiveSection';
+import { PiCertificateFill } from "react-icons/pi";
 
 const navLinks = [
     { id: "hero", icon: FaHome, text: "Home", path: "/" },
@@ -30,6 +32,12 @@ const navLinks = [
         icon: FaGraduationCap,
         text: "Education",
         path: "/education",
+    },
+    {
+        id: "certifications",
+        icon: PiCertificateFill,
+        text: "Certifications",
+        path: "/certifications",
     },
     {
         id: "skills",
