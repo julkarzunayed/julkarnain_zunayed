@@ -54,7 +54,7 @@ const Education = () => {
                         educationData?.map((degree, index) =>
                             <div key={index} className="bg-gradient-to-br hover:bg-gradient-to-tr from-teal-400/70 via-cyan-500/50 to-indigo-500/50 rounded-xl p-[3px] transition-all duration-300 hover:scale-105">
                                 <div className="p-3 sm:p-6   bg-[#0f1629] rounded-[10px] space-y-2 md:space-y-3">
-                                    <p className="font-semibold text-lg text-teal-500">FEATURED EDUCATION</p>
+                                    <p className="font-semibold  text-teal-500">FEATURED EDUCATION</p>
                                     <div className="flex items-center gap-2 text-lg md:text-2xl text-gray-200 font-bold">
                                         <Icon icon="ix:certificate" className='text-emerald-400 text-2xl' />
                                         <h3 className="">

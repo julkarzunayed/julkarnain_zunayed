@@ -1,7 +1,12 @@
-import { Icon } from 'lucide-react';
+// import { Icon } from 'lucide-react';
 import React from 'react';
 import { GoLinkExternal } from 'react-icons/go';
+import { Icon } from '@iconify/react/dist/iconify.js';
 
+
+import NSDA from "../assets/Logo/NSDA_Bangladesh.png";
+import bteb from "../assets/Logo/bteb-seeklogo.png";
+import programmigHero from "../assets/Logo/company_logo.png";
 const certificationsData = [
     {
         id: 1,
@@ -9,6 +14,7 @@ const certificationsData = [
         organization: "NATIONAL SKILLS DEVELOPMENT AUTHORITY (NSDA)",
         skills: ["Motor Control", "Industrial Wiring", "House Wiring", "Motor Rewinding", "OSH Practices", "Electrical Safety"],
         previewUrl: "https://drive.google.com/file/d/1Ca-78y3NEC4-pl506KJj-VIZXiiiqhHf/view?usp=drive_link",
+        logo: NSDA,
     },
     {
         id: 2,
@@ -16,6 +22,7 @@ const certificationsData = [
         organization: "Programming Hero",
         skills: ["JavaScript", "Node.js", "Concept of Programming", "MERN Stack", "Server Concepts", "ReactJS", "ExpressJS", "MongoDB"],
         previewUrl: "https://drive.google.com/file/d/1DKbXSKon1zqOXCdbU-bk-88kjT6UBAQp/view?usp=drive_link",
+        logo: programmigHero,
     },
     {
         id: 3,
@@ -23,12 +30,13 @@ const certificationsData = [
         organization: "Bangladesh Technical Education Board (BTEB)",
         skills: ["MS Word", "MS Excel", "MS PowerPoint", "e-Mail Writing", "Computer Fundamentals"],
         previewUrl: "https://drive.google.com/file/d/1BnupSr7zuSErjXyStZef01FyfvU6sb4D/view?usp=drive_link",
+        logo: bteb,
     },
 ];
 
 const Certifications = () => {
     return (
-        <section id='projects' className='min-h-screen flex items-center justify-center border border-blue-700/10 '>
+        <section id='certifications' className='min-h-screen flex items-center justify-center border border-blue-700/10 '>
             <div className="container mx-auto my-10">
                 <h1 className="gradient-text text-4xl md:text-5xl lg:text-6xl text-center font-black  p-5">
                     Certifications & Training
@@ -38,15 +46,19 @@ const Certifications = () => {
                 </h6>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     {certificationsData.map((cert) => (
-                        <div key={cert.id} className="bg-gradient-to-br hover:bg-gradient-to-tr from-teal-400/70 via-cyan-500/50 to-indigo-500/50 rounded-xl p-[3px] transition-all duration-300 hover:scale-105">
+                        <div key={cert.id} className="bg-gradient-to-br hover:bg-gradient-to-tr from-teal-400/70 via-cyan-500/50 to-indigo-500/50 rounded-xl p-[3px] transition-all duration-300 hover:scale-105 group">
                             <div
                                 className="p-3 sm:p-6   bg-[#0f1629] rounded-[10px] space-y-2 md:space-y-3 h-full flex flex-col justify-between"
                             >
                                 <div>
                                     {/* Course Title */}
+
+
                                     <h3 className="text-xl font-semibold text-white mb-2">
                                         {cert.courseName}
                                     </h3>
+
+
 
                                     {/* Providing Organization */}
                                     <p className="text-sm text-gray-400 font-medium mb-4">
@@ -65,20 +77,13 @@ const Certifications = () => {
                                             )
                                         }
                                     </div>
-                                    {/* <div className="flex flex-wrap gap-2 mb-6">
-                                        {cert.skills.map((skill, index) => (
-                                            <span
-                                                key={index}
-                                                className="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md border border-gray-700"
-                                            >
-                                                {skill}
-                                            </span>
-                                        ))}
-                                    </div> */}
                                 </div>
 
                                 {/* Preview Link Button */}
-                                <div className="pt-4 border-t border-gray-800 flex justify-end">
+                                <div className="pt-4 border-t border-gray-800 flex justify-between items-center">
+                                    <div>
+                                        <img className='rounded-md group-hover:scale-110 w-8 h-8  bg-gray-200' src={cert.logo || 'https://placehold.co/550x550/0f1629/ff7800.png?text=Julkarnain+Zunayed'} alt="" />
+                                    </div>
                                     <a
                                         href={cert.previewUrl}
                                         target="_blank"
