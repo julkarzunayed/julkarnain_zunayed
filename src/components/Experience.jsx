@@ -11,9 +11,10 @@ const Experience = () => {
       type: "Professional Training",
       description: "Hands-on technical training on Siemens S7-1200 PLC programming, TIA Portal software, logic gate design, industrial motor controls, and HMI design.",
       highlights: [
-        "Configured hardware architecture, IP communication, and IO addressing between PC & Siemens S7-1200 PLC.",
-        "Programmed ladder diagrams (LAD/FBD) utilizing NO/NC contacts, Set-Reset, Timers, Counters, and Comparators.",
-        "Designed industrial automation programs for Star-Delta and Reverse-Forward motor control setups.",
+        "Programmed Ladder Diagrams (LAD) utilizing NO/NC contacts, timers, counters, and comparators in TIA Portal.",
+        "Designed automation logic and control wiring for industrial motor starter circuits, including Star-Delta and Reverse-Forward setups.",
+        "Configured S7-1200 hardware, IP communications, and I/O addressing for automated factory lines.",
+        "Developed basic Human-Machine Interface (HMI) screen tags and animations to monitor industrial processes.",
         "Gained hands-on experience in simulation, IO forcing, Analog Processing (AI/AO), and Siemens HMI tag creation/animations."
       ],
       tags: [
@@ -31,15 +32,18 @@ const Experience = () => {
       id: 2,
       role: "Industrial Engineering Intern",
       company: "Meghna Group of Industries (MGI)",
-      unit: "Everest Power Generation Co. Ltd.",
+      unit: "Units: Everest Power Generation Co. Ltd. & Sugar Refinery. Fresh Cement and Meghna Pulp & Paper Mills",
       period: "September 26 – Present",
       type: "Student Internship",
       description: "Hands-on industrial training across heavy power plant operations, protection setups, switchgear, and power generation units.",
       highlights: [
-        "Studied engine working principles, cooling, lubricating, fuel/air, and protection systems.",
-        "Gained practical insights into Alternator principles, load distribution, and EGB boilers.",
-        "Analyzed LV/MV switchgear systems, Auxiliary Transformers, and Substation Equipment.",
-        "Explored Transformer Protection Systems, Plant DC Systems, and Motor Controlling Systems."
+        "Analyzed engine working principles, cooling, fuel systems, and protection setups at Everest Power.",
+        "Studied LV/MV switchgear, EGB boilers, power transformers, and substation equipment.",
+        "Executed coil resistance, multimeter continuity, and cable insulation tests using a megger.",
+        "Tested magnetic contactors, relays, UMCs, and starter circuits (DOL, Star-Delta, Reverse-Forward).",
+        "Calculated transformer ratings, circuit breaker sizing, busbars, and PFI plant designs.",
+        "Explored 4-20mA instrumentation signal loops, sensor wiring, and DCS concepts.",
+        "Participated in cement grinding, packing line operations, and maintenance policies at Unique Cement."
       ],
       tags: ["Power Generation", "EGB Boiler", "Alternator Operation", "LV/MV Switchgear", "Substation Equipments", "Motor Control", "Transformer Protection", "Engine Operation System", "Industrial Automation & Control"]
     },
