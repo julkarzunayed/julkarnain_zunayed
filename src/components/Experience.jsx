@@ -1,5 +1,10 @@
 import React from 'react';
 
+import nitas from "../assets/Logo/NITAS.jfif";
+// import mgi from "../assets/Logo/MGI_Logo.webp";
+import mgi from "../assets/Logo/Mgi.png";
+
+
 const Experience = () => {
   const experiences = [
     {
@@ -26,7 +31,8 @@ const Experience = () => {
         "Star-Delta Control",
         "Reverse-Forward Control",
         "Industrial Automation"
-      ]
+      ],
+      logo: nitas,
     },
     {
       id: 2,
@@ -45,7 +51,8 @@ const Experience = () => {
         "Explored 4-20mA instrumentation signal loops, sensor wiring, and DCS concepts.",
         "Participated in cement grinding, packing line operations, and maintenance policies at Unique Cement."
       ],
-      tags: ["Power Generation", "EGB Boiler", "Alternator Operation", "LV/MV Switchgear", "Substation Equipments", "Motor Control", "Transformer Protection", "Engine Operation System", "Industrial Automation & Control"]
+      tags: ["Power Generation", "EGB Boiler", "Alternator Operation", "LV/MV Switchgear", "Substation Equipments", "Motor Control", "Transformer Protection", "Engine Operation System", "Industrial Automation & Control"],
+      logo: mgi,
     },
     // {
     //   id: 2,
@@ -134,12 +141,19 @@ const Experience = () => {
                       </div>
 
                       {/* Title & Organization */}
-                      <h3 className="text-xl group-hover:text-2xl font-bold text-white group-hover:text-cyan-300 transition-colors">
-                        {exp.role}
-                      </h3>
-                      <p className="text-sm text-cyan-400 group-hover:text-gray-200 font-medium mb-1">
-                        {exp.company}
-                      </p>
+                      <div className='flex justify-between'>
+                        <div>
+                          <h3 className="text-xl group-hover:text-2xl font-bold text-white group-hover:text-cyan-300 transition-colors">
+                            {exp.role}
+                          </h3>
+                          <p className="text-sm text-cyan-400 group-hover:text-gray-200 font-medium mb-1">
+                            {exp.company}
+                          </p>
+                        </div>
+                        <div className="">
+                          <img className='rounded-md  w-8  bg-gray-200 group-hover:scale-150' src={exp.logo || 'https://placehold.co/550x550/0f1629/ff7800.png?text=Julkarnain+Zunayed'} alt="" />
+                        </div>
+                      </div>
                       <p className="text-xs text-gray-400 italic mb-4">
                         {exp.unit}
                       </p>
